@@ -26,8 +26,8 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES:= btconfig.c
 
 LOCAL_C_INCLUDES := \
-    system/bluetooth/bluedroid/include \
-    system/bluetooth/bluez-clean-headers
+    system/bluetooth/bluedroid/include/bluedroid/ \
+    system/bluetooth/bluez-clean-headers/bluetooth
 
 LOCAL_SHARED_LIBRARIES := \
     libbluedroid

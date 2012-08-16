@@ -17,26 +17,6 @@ ifneq ($(BUILD_TINY_ANDROID),true)
 
 LOCAL_PATH:= $(call my-dir)
 
-#
-# btconfig
-#
-
-include $(CLEAR_VARS)
-
-LOCAL_SRC_FILES:= btconfig.c
-
-LOCAL_C_INCLUDES := \
-    system/bluetooth/bluedroid/include/bluedroid/ \
-    system/bluetooth/bluez-clean-headers/bluetooth
-
-LOCAL_SHARED_LIBRARIES := \
-    libbluedroid
-
-LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
-LOCAL_MODULE_TAGS := eng
-LOCAL_MODULE:= btconfig
-
-include $(BUILD_EXECUTABLE)
-
 endif # not BUILD_TINY_ANDROID
 endif # TARGET_DEVICE
+
