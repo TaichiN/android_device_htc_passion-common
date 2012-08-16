@@ -44,6 +44,19 @@ PRODUCT_PACKAGES := \
     gps.mahimahi \
     libOmxCore \
     libOmxVidEnc \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    MagicSmokeWallpapers \
+    VisualizationWallpapers \
+    librs_jni \
+    Gallery3d \
+    SpareParts \
+    Development \
+    Term \
+    CMTimers \
+    FM \
+    rzscontrol \
+    dexpreopt \
     com.android.future.usb.accessory
 
 # we have enough storage space to hold precise GC data
@@ -54,6 +67,24 @@ PRODUCT_COPY_FILES += \
     device/htc/passion-common/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/htc/passion-common/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc \
     device/htc/passion-common/vold.fstab:system/etc/vold.fstab
+
+#Media profile
+PRODUCT_COPY_FILES += \
+    device/htc/passion-common/poweron.ogg:system/media/poweron.ogg \
+    device/htc/passion-common/camera_click.ogg:system/media/audio/ui/camera_click.ogg \
+    device/htc/passion-common/VideoRecord.ogg:system/media/audio/ui/VideoRecord.ogg
+
+## Tweaks
+PRODUCT_COPY_FILES += \
+    device/htc/passion-common/70zipalign:system/etc/init.d/70zipalign \
+    device/htc/passion-common/zipalign:system/bin/zipalign \
+    device/htc/passion-common/app/ics.apk:system/app/ics.apk \
+    device/htc/passion-common/prebuilt/be_photo:system/etc/be_photo \
+    device/htc/passion-common/prebuilt/be_movie:system/etc/be_movie
+
+## application
+PRODUCT_COPY_FILES += \
+      device/zte/blade/app/BMKG.apk:system/app/BMKG.apk
 
 
 PRODUCT_COPY_FILES += \
