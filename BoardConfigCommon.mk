@@ -81,7 +81,7 @@ I_AM_KOUSH := true
 
 # Set the system image size limit to the full physical space available for eng build
 ifeq (eng,$(TARGET_BUILD_VARIANT))
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x09000000
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0xABA9500
 endif
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
