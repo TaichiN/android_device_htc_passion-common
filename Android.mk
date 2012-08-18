@@ -12,11 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(TARGET_DEVICE),passion)
-ifneq ($(BUILD_TINY_ANDROID),true)
+LOCAL_PATH := $(my-dir)
+subdir_makefiles := \
+	$(LOCAL_PATH)/libsensors/Android.mk \
+	$(LOCAL_PATH)/liblights/Android.mk
 
-LOCAL_PATH:= $(call my-dir)
-
-endif # not BUILD_TINY_ANDROID
-endif # TARGET_DEVICE
-
+include $(subdir_makefiles)

@@ -83,7 +83,7 @@
     
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not 
          specified -->
-    <string name="default_wallpaper_component">com.android.wallpaper/.nexus.NexusWallpaper</string>
+    <string name="default_wallpaper_component">@null</string>
 
     <integer name="config_deskDockKeepsScreenOn">0</integer>
     <integer name="config_carDockKeepsScreenOn">1</integer>
@@ -148,33 +148,6 @@
         <item>30</item>
     </integer-array>
 
-    <bool name="cm_default_is_tablet">true</bool>
-
-    <bool name="cm_default_has_soft_buttons">true</bool>
-
-    <bool name="cm_default_bottom_status_bar">false</bool>
-
-    <bool name="cm_default_use_dead_zone">false</bool>
-
-    <bool name="cm_default_soft_buttons_left">false</bool>
-
-    <bool name="cm_default_show_soft_home">false</bool>
-    <bool name="cm_default_show_soft_menu">false</bool>
-    <bool name="cm_default_show_soft_back">false</bool>
-    <bool name="cm_default_show_soft_search">false</bool>
-    <bool name="cm_default_show_soft_quick_na">false</bool>
-
-    <bool name="cm_default_disable_lockscreen">false</bool>
-
-    <bool name="cm_default_disable_fullscreen">false</bool>
-
-    <integer name="cm_default_unhide_button_index">0</integer>
-
-    <bool name="cm_default_extend_power_menu">true</bool>
-
-    <bool name="cm_default_power_menu_home">true</bool>
-    <bool name="cm_default_power_menu_menu">true</bool>
-    <bool name="cm_default_power_menu_back">true</bool>
-
-    <bool name="cm_default_reverse_volume_behavior">false</bool>
+    <!-- Timeout in MS for how long you have to long-press the back key to kill the foreground app. -->
+    <integer name="config_backKillTimeout">1400</integer>
 </resources>
