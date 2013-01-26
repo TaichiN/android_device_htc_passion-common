@@ -59,19 +59,6 @@ PRODUCT_COPY_FILES += \
     device/htc/passion-common/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc \
     device/htc/passion-common/vold.fstab:system/etc/vold.fstab
 
-
-PRODUCT_COPY_FILES += \
-    device/htc/passion-common/bcm4329.ko:system/lib/modules/bcm4329.ko
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/htc/passion-common/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
-
 $(call inherit-product-if-exists, vendor/htc/passion-common/passion-vendor.mk)
 
 # media profiles and capabilities spec
@@ -79,4 +66,3 @@ $(call inherit-product, device/htc/passion-common/media_a1026.mk)
 
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
-

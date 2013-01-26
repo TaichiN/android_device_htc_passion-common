@@ -45,6 +45,10 @@ BOARD_KERNEL_CMDLINE := no_console_suspend=1 wire.search_count=5
 BOARD_KERNEL_BASE := 0x20000000
 BOARD_KERNEL_NEW_PPPOX := true
 
+# Kernel Build
+TARGET_KERNEL_SOURCE := kernel/htc/msm
+TARGET_KERNEL_CONFIG := cyanogen_mahimahi_defconfig
+
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
