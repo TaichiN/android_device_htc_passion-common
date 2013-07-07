@@ -147,7 +147,4 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>30</item>
     </integer-array>
-
-    <!-- Timeout in MS for how long you have to long-press the back key to kill the foreground app. -->
-    <integer name="config_backKillTimeout">1500</integer>
 </resources>
